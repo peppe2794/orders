@@ -1,10 +1,5 @@
 pipeline {
   environment {
-    registry = "peppe2794/frontend"
-    registryCredential = 'dockerhub'
-    dockerImage = ''
-    DOCKER_TAG = getVersion().trim()
-    IMAGE="frontend"
   }
   tools {
     nodejs 'NodeJS'
