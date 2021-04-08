@@ -8,7 +8,7 @@ pipeline {
       agent {
         docker {
           image 'maven:3.6-jdk-11' 
-          args '-v /var/lib/jenkins/workspace/orders:/usr/src/mymaven -w /usr/src/mymaven -w /var/lib/jenkins/workspace/orders -v /var/lib/jenkins/workspace/orders:/var/lib/jenkins/workspace/orders:rw,z -v /var/lib/jenkins/workspace/orders@tmp:/var/lib/jenkins/workspace/orders@tmp:rw,z' 
+          args '-v /var/lib/jenkins/workspace/order:/usr/src/mymaven -w /usr/src/mymaven -w /var/lib/jenkins/workspace/order -v /var/lib/jenkins/workspace/order:/var/lib/jenkins/workspace/order:rw,z -v /var/lib/jenkins/workspace/order@tmp:/var/lib/jenkins/workspace/order@tmp:rw,z' 
           reuseNode true
         }
       }
