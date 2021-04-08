@@ -1,6 +1,4 @@
 pipeline {
-  environment {
-  }
   tools {
     nodejs 'NodeJS'
  }
